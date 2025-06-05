@@ -3,11 +3,11 @@ name: Scala Backend Test Suite
 on:
   push:
     paths:
-      - 'backend/**'
+      - 'direct-file/backend/**'
     branches: [main]
   pull_request:
     paths:
-      - 'backend/**'
+      - 'direct-file/backend/**'
     branches: [main]
 
 jobs:
