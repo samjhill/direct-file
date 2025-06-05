@@ -1,4 +1,4 @@
-name: Scala Backend Test Suite
+name: Run Scala Fact-Graph test suite
 
 on:
   push:
@@ -17,7 +17,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: direct-file/backend
+        working-directory: direct-file/fact-graph-scala
 
     steps:
       - name: Checkout repository
