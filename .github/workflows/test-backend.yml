@@ -39,6 +39,7 @@ jobs:
           key: sbt-cache-${{ runner.os }}-${{ hashFiles('backend/**.sbt') }}
           restore-keys: |
             sbt-cache-${{ runner.os }}
-
+    
+      - uses: sbt/setup-sbt@v1
       - name: Run Scala tests
         run: sbt test
